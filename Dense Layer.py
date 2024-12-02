@@ -12,7 +12,7 @@ class Layer_Dense:
             case 'xavier'   :
                 self.weights =  np.random.randn(n_inputs, n_neurons) * np.sqrt(1 / n_inputs)    # Xavier 초기화
             case 'he'       :
-                self.weights =  np.random.randn(n_inputs, n_neurons) * np.sqrt(2 / n_inputs)    # He 초기화
+                self.weights =  np.random.randn(n_inputs, n_neurons) * np.sqrt(2    / n_inputs)    # He 초기화
             case 'gaussian' :
                 self.weights = np.random.randn(n_inputs, n_neurons) * 0.01                      # Gaussian 초기화
             case _: #파이썬에서 _는 아무것도 입력되지 않은 상태를 의미함
